@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Mobile-First Responsive Web Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="topnav">
+                <a href="#home" class="active"><img src="images/logo1.svg" alt="logo" /></a></a>
+                <div id="myLinks">
+                    <a href="#seo-blog">Home</a>
+                    <a href="#seo-blog">SEO Blog</a>
+                    <a href="#seo-hosting">SEO Hosting</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars hanvergbtn"></i>
+                </a>
+            </div>
+        </header>
+        <div class="first-div">
+            <div class="ads-left">
+                <img src="images/ads1.svg" alt="logo" />
+            </div>
+            <div class="center-form">
+                <p class='m-intro'>Google SERT Snippet Optimization Tool</p>
+                <label for="basic-url" class="form-label h-title">Title</label>
+                <span class="s-width">0px/560px</span>
+                <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control t-title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <label for="basic-url" class="form-label h-desc">Description</label>
+                <div class="input-group input-group-sm mb-3">
+                    <textarea class="form-control t-desc" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></textarea>
+                </div>
+                <label for="basic-url" class="form-label h-url">URL</label>
+                <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control t-url" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Rich Snippet
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Date
+                    </label>
+                </div>
+                <div class="row sufer-seo-area" >
+                    <p class="text-start sufer-text">🚀🚀🚀 Want to Put Your Content to Next Level? Try Surfer SEO</p>
+                </div>
+                <div class="row search-course-area" >
+                    <p class="text-start course-text">🔥 Free Online Course 🔥 Keyword Research Course with Greg Gifford ➜</p>
+                </div>
+            </div>
+            <div class="ads-right"></div>
+        </div>
+        <div id="serp_preview">
+            <div id="top_bar">
+              <img src="images/google_logo.svg" id="google_logo" alt="Google Logo"> <div id="search_div"><div id="search_input" contenteditable="true"></div>
+              <div id="search_categories">
+                  <div class="search_cat_active">All</div>
+                  <div class="search_cat">Images</div>
+                  <div class="search_cat">Videos</div>
+                  <div class="search_cat">News</div>
+                  <div class="search_cat">Maps</div>
+              <div class="search_cat">More</div>
+              <div class="mode_cat" id="mode_mobile">
+                  <i class="material-icons">phone_iphone</i>
+                  <span style="display:block; font-size: 10px;">Mobile</span>
+              </div>
+                <div class="mode_cat mode_active" style="padding-left: 0px;" id="mode_desktop">
+                    <i class="material-icons">desktop_windows</i>
+                    <span style="display:block; font-size: 10px;">Desktop</span>
+                </div>
+                </div>
+            </div>
+        </div>
+            <div id="serp_result" >
+              <!-- <span id="serp_url">vpnonline.com</span><div class="arrow_container" style="display: inline;"><span class="down_arrow"></span></div><br>
+              <span id="serp_title">VPN Online - Find Your VPN Today!</span><br>
+              <div id="rich_div" style="display: none;"><span id="serp_rich"><img id="score_stars" src="/img/stars.png" alt="Rating stars">Rating: 9,7/10 - 112 votes</span></div>
+              <span id="serp_meta"><span id="rich_date">24 Dec, 2019 - </span>VPN Online reviews the various VPN services and provides an in-depth look at the strengths and weaknesses of each of VPN.</span> -->
+            </div>
+            <div id="serp_result_mobile" style="background-color: rgb(255, 255, 255); font-size: 14px; line-height: 20px; box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px; border-radius: 8px; width: 359px; margin: 50px auto 0px; display: none;">
+              <div id="serp_favdiv_mobile" style="font-size: 14px;line-height: 20px;color: #202124;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-top: 13px;display: block; padding-left: 16px; padding-right: 16px;">
+                <img id="serp_favicon_mobile" style="margin-right: 12px;vertical-align: middle;width: 16px;height: 16px;" src="https://www.google.com/s2/favicons?domain=vpnonline.com">
+                <span id="serp_favcrumbs_mobile" style="color: #3C4043;white-space: nowrap;font-size: 12px;font-family: Roboto,HelveticaNeue,Arial,sans-serif !important;font-weight: inherit;line-height: 20px;">https://vpnonline.com</span>
+              </div>
+              <div id="serp_title_mobile" style="width: 343px; word-wrap: break-word; font-size: 16px; line-height: 20px; padding-top: 12px; padding-left: 16px; padding-right: 16px; Roboto,HelveticaNeue,Arial,sans-serif !important; color: #1967D2;">VPN Online - Find Your VPN Today!</div>
+              <div id="serp_meta_mobile" style="width: 327px; word-wrap: break-word; font-size: 14px; line-height: 20px; padding-top: 12px; padding-left: 16px; padding-right: 16px; padding-bottom: 12px; Roboto,HelveticaNeue,Arial,sans-serif !important; color: #3C4043">VPN Online reviews the various VPN services and provides an in-depth look at the strengths and weaknesses of each of VPN.</div>
+              <div id="rich_div_mobile" style="margin-top: -4px; width: 327px; overflow-wrap: break-word; font-size: 14px; line-height: 20px; padding-left: 16px; padding-right: 16px; padding-bottom: 12px; display: none;">
+                <div id="rating_mobile" style="font-size: 14px; line-height: 20px; font-family: Roboto,HelveticaNeue,Arial,sans-serif; color: #202124;">Rating</div>
+                <div id="score_mobile" style="margin-top: 5px; font-size: 14px; line-height: 20px; font-family: Roboto,HelveticaNeue,Arial,sans-serif; color: #70757A;">9,2/10 <img id="score_stars_mobile" src="/img/stars_mobile.png" alt="Rating stars" style="margin-top: -3px;"> (19)</div>
+              </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="snippet-area">
+            <div class="snippet-left">
+                <header class="snippet-header">
+                    <p class="h-title">About the Google SERP Snippet Optimization Tool</p>
+                </header>
+                <div class="snippet-textarea">
+                    <p class="f-content">
+                        The main purpose of the SERP Snippet Optimization Tool is to allow webmasters and content publishers to strategically construct page titles and meta description tags that will result in aesthetically-pleasing or eye-catching listings in Google's organic search results. Using this tool, you can optimize the content of your titles and snippets to maximize your click-through rate (CTR) from Google. 
+                        In other words, you can increase your organic search engine traffic for a specific keyword...even if you can't improve your rankings. This tactic can be especially useful in situations where you know you'll probably never outrank the sites above yours (e.g. a very strong competitor, a Wikipedia page, a government website, etc.) for certain keywords. In those scenarios, your best option is to make your site's listing stand out from the rest and look as inviting as possible.
+                    </p>
+                    
+
+
+                </div>
+            </div>
+            <div class="snippet-right">
+                <img class= "snippet-area-img" src="images/case-photo.png">
+            </div>
+        </div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>	
