@@ -18,8 +18,8 @@
             <div class="topnav">
                 <a href="#home" class="active"><img src="images/logo1.svg" alt="logo" /></a></a>
                 <div id="myLinks">
-                    <a href="#seo-blog">Home</a>
-                    <a href="#seo-blog">SEO Blog</a>
+                    <a class="home active" href="#home">Home</a>
+                    <a class="seo-blog"href="#seo-blog">SEO Blog</a>
                     <a href="#seo-hosting">SEO Hosting</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -28,50 +28,83 @@
             </div>
         </header>
         <div class="first-div">
-            <div class="ads-left">
-                <img src="images/ads1.svg" alt="logo" />
+            <div class="advs-left">
+                <img class="ads-img" src="images/case-photo.png" alt="google-ads" />
             </div>
             <div class="center-form">
-                <p class='m-intro'>Google SERT Snippet Optimization Tool</p>
+                <div class="h-row">
+                    <div class="logo-div">
+                        <img class="google-logo-part inline-block-child" width="70" height="50" src="images/google_logo.svg" id="google_logo1"alt="Google Logo">
+                    </div>
+                    <div class="logo-text-div">
+                        <p class='m-intro inline-block-child'>SERT Snippet Optimization Tool</p>
+                    </div>
+                    
+                   
+                </div>
                 <label for="basic-url" class="form-label h-title">Title</label>
-                <span class="s-width">0px/560px</span>
-                <div class="input-group input-group-sm mb-3">
-                    <input type="text" class="form-control t-title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-row-group">
+                    <div class="mb-3 ht-title">
+                        <input type="text" class="form-control control-width1 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <span class="s-width">0px/560px</span>
                 </div>
                 <label for="basic-url" class="form-label h-desc">Description</label>
-                <div class="input-group input-group-sm mb-3">
-                    <textarea class="form-control t-desc" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></textarea>
+                <div class="input-row-group">
+                    <div class="mb-3 ht-desc">
+                        <textarea class="form-control control-width2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></textarea>
+                    </div>
+                    <span class="s-width2">0px/990px</span>
                 </div>
+
                 <label for="basic-url" class="form-label h-url">URL</label>
-                <div class="input-group input-group-sm mb-3">
-                    <input type="text" class="form-control t-url" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-row-group">
+                    <div class="mb-3 ht-url">
+                        <input type="text" class="form-control control-width1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <span class="s-width">0px/385px</span>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                    Rich Snippet
-                    </label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text1">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Rich Snippet
+                        </label>
+                      </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                    Date
-                    </label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text1">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Date
+                        </label>
+                      </div>
+                    </div>
                 </div>
-                <div class="row sufer-seo-area" >
-                    <p class="text-start sufer-text">🚀🚀🚀 Want to Put Your Content to Next Level? Try Surfer SEO</p>
-                </div>
-                <div class="row search-course-area" >
-                    <p class="text-start course-text">🔥 Free Online Course 🔥 Keyword Research Course with Greg Gifford ➜</p>
-                </div>
+            
+
             </div>
-            <div class="ads-right"></div>
+            <div class="advs-right">
+                <img class="ads-img" src="images/case-photo.png" alt="google-ads" />
+            </div>
+        </div>
+
+        <div id = "sufer-seo-area" class="sufer-seo-area" >
+            <p class="">Want to Put Your Content to Next Level? Try Surfer SEO</p>
+        </div>
+
+
+        <div id="search-course-area" class="search-course-area" >
+            <p class=""> Free Online Course Keyword Research Course with Greg Gifford ➜</p>
         </div>
         <div id="serp_preview">
             <div id="top_bar">
               <img src="images/google_logo.svg" id="google_logo" alt="Google Logo"> <div id="search_div"><div id="search_input" contenteditable="true"></div>
               <div id="search_categories">
-                  <div class="search_cat_active">All</div>
+                  <div class="search_cat active">All</div>
                   <div class="search_cat">Images</div>
                   <div class="search_cat">Videos</div>
                   <div class="search_cat">News</div>
@@ -116,16 +149,13 @@
         <div class="snippet-area">
             <div class="snippet-left">
                 <header class="snippet-header">
-                    <p class="h-title">About the Google SERP Snippet Optimization Tool</p>
+                    <h1 class="h-title">About the Google SERP Snippet Optimization Tool</h1>
                 </header>
                 <div class="snippet-textarea">
                     <p class="f-content">
                         The main purpose of the SERP Snippet Optimization Tool is to allow webmasters and content publishers to strategically construct page titles and meta description tags that will result in aesthetically-pleasing or eye-catching listings in Google's organic search results. Using this tool, you can optimize the content of your titles and snippets to maximize your click-through rate (CTR) from Google. 
                         In other words, you can increase your organic search engine traffic for a specific keyword...even if you can't improve your rankings. This tactic can be especially useful in situations where you know you'll probably never outrank the sites above yours (e.g. a very strong competitor, a Wikipedia page, a government website, etc.) for certain keywords. In those scenarios, your best option is to make your site's listing stand out from the rest and look as inviting as possible.
                     </p>
-                    
-
-
                 </div>
             </div>
             <div class="snippet-right">
@@ -133,6 +163,117 @@
             </div>
         </div>
 
+        <div class="google-snippet-part">
+            <h2 class="snippet-part-title">Parts of a Google Snippet</h2>
+            <p class="snippet-part-text">Here is a brief explanation of the various elements that can be found in a typical Google Web Search result.
+            <h2 class="character-title">Title</h2>
+            <div class="character">
+                <div class="character-left">
+                    <img class= "character-part-img" src="images/circle.svg">
+                    <p class="character-part-text-left">Google shows up to 70 characters (including spaces) of a page's title in its search results.</p>
+                </div>
+                <div class="character-right">
+                    <img class= "character-part-img" src="images/circle.svg">
+                    <p class="character-part-text-right">If a page title exceeds 70 characters, Google will show as many whole words as it can, and the rest are replaced with an ellipsis (...).</p>
+                </div>
+            </div>
+           
+            
+        
+        </div>
+
+        <div class="meta-desc-area">
+            <div class="meta-left">
+                <img class= "meta-area-img" style= "width:300px" src="images/case-photo.png">
+            </div>
+            <div class="meta-right">
+                <!-- <header class="meta-snippet-header"> -->
+                    <h1 class="meta-title">Snippet (Meta Description) </h1>
+                <!-- </header> -->
+                <div class="meta-snippet-textarea">
+                    <p class="meta-content1">
+                        Google shows up to 156 characters (including spaces) of a page's meta description tag.
+                    </p>
+                    <p class="meta-content2">
+                        If a page's meta description tag exceeds 156 characters, Google will show as many whole words as it can, and the rest are replaced with an ellipsis (...).
+                    </p>
+                    <p class="meta-content3">
+                        If the web page includes a published-on date, Google may include that date as part of the snippet. In these cases, the date counts as part of the 156 characters.
+                    </p>
+                    <p class="meta-content4">
+                        To make sure your web page's snippet can fit a published-on date and the entire meta description (without getting cut off by the ellipsis), keep your meta description tag shorter than 139 characters (or 140 characters, if the published-on date is from a single-digit day of the month).
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rich-area">
+            <div class="rich-left">
+                    <h1 class="r-title">Rich Snippet</h1>
+                <div class="rich-textarea">
+                    <p class="r-content1">
+                        Google shows rich snippet text for some types of pages and data, for example: reviews, people, businesses, and events.
+                    </p>
+                    <p class="r-content2">
+                        For information about rich snippets and microformats, see Google's help page on rich snippets.
+
+                    </p>
+                </div>
+            </div>
+            <div class="rich-right">
+                <img class= "rich-area-img" style="margin-top: 30px;width:300px;"src="images/case-photo.png">
+            </div>
+        </div>
+
+        <div class="url-area">
+            <div class="url-left">
+                <img class= "meta-area-img" style= "width:300px" src="images/case-photo.png">
+            </div>
+            <div class="url-right">
+                    <h1 class="url-title">URL </h1>
+                <div class="url-snippet-textarea">
+                    <p class="url-content1">
+                        For sites with a clear information hierarchy, Google may show breadcrumb links in the search results.
+
+                    </p>
+                    <p class="url-content2">
+                        This snippet tool does not currently support any advanced URL features. These may be added in future releases.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pixel-area">
+            <div class="pixel-left">
+                    <h1 class="p-title">Pixel based alternative</h1>
+                <div class="pixel-textarea">
+                    <p class="p-content1">
+                        Perhaps you prefer a pixel based tool?
+                    </p>
+                    <p class="p-content2">
+                        This snippet tool does not currently support any advanced URL features. These may be added in future releases.
+
+                    </p>
+                </div>
+            </div>
+            <div class="pixel-right">
+                <img class= "pixel-area-img" style="margin-top: 30px;width:300px;"src="images/case-photo.png">
+            </div>
+        </div>
+
+        <div class="disclaimer-area">
+            <h2 class="disclaimer-title">Disclaimer</h2>
+            <span class="disclaimer-content">This snippet tool and the content of this website are not affiliated with Google nor endorsed by them. The Google logo and any other trademarks owned by Google contained herein are used for educational/non-commercial purposes only. I have made every effort to replicate the appearance of Google's search results as accurately as possible, however the information on this website is provided "as is" without any representations or warranties, express or implied.</span>
+        </div>
+
+        <div class="footer-area">
+            <img src="images/logo1.svg" style= "width:100px;height: 100px;" alt="logo" />
+            <span class="footer-content">© Copyright  2007-2020  SEOmofo.com</span>
+        </div>
     </div>
 
     
