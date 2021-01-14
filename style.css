@@ -182,6 +182,25 @@ header{
     float: left;
     position: relative;
 }
+
+.mode_cat {
+    color: #aaa;
+    font-weight: 400;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    bottom: -7px;
+    text-align: center;
+    height: 48px;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    padding-right: 0px;
+    vertical-align: middle;
+    line-height: 10px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    padding-top: 9px;
+}
 .snippet-area{
     width: 900px;
     margin: auto;
@@ -196,9 +215,10 @@ header{
     line-height: 34px !important;
     letter-spacing: 0em;
     text-align: left;
-     }
+    margin:15px 0 24px 0;
+}
 .snippet-area .snippet-left .snippet-textarea{width: 100%;}
-.snippet-area .snippet-left .snippet-textarea .f-content{
+.snippet-area .snippet-left .snippet-textarea .f-content,.snippet-area .snippet-left .snippet-textarea .f-content1{
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -207,8 +227,10 @@ header{
     letter-spacing: 0em;
     text-align: left;
     color: #4F4F4F;
+    padding: 0px 0 9px 0;
 }
-.snippet-right{ width: 45%;margin-top: 168px;}
+/* .snippet-area .snippet-left .snippet-textarea .f-content1{} */
+.snippet-right{ width: 50%;margin-top: 220px;}
 .snippet-right .snippet-area-img{    width: 300px;float: right;}
 .google-snippet-part{width: 900px;margin: auto;}
 .google-snippet-part .snippet-part-title{font-family: Poppins;
@@ -229,35 +251,26 @@ header{
 }
 
 .character{ width:900px;margin: auto;display: flex;}
-.character .character-left{ width:45%;} 
+.character .character-left{ width:50%;} 
 .character .character-left .character-part-img{display: inline-block;width: 4%; margin-top: 9px;} 
-.character-part-text-left{margin-left: 12px; width: 90%;display: inline-block;}
-.character .character-right{ width:45%;display: flex; flex-direction: row;} 
-.character .character-right p{margin-left: 12px;
-    margin-top: 10px;
-    width: 396px;} 
+.character-part-text-left{margin-left: 24px; width: 90%;margin-top:-26px;}
+.character .character-right{ width:50%;display: flex; flex-direction: row;} 
+.character .character-right p{margin-left: 12px;margin-top: 10px;} 
 .meta-desc-area{width:900px;margin:auto;display: flex; flex-direction: row;}   
-.meta-desc-area .meta-left{width:45%;margin-top: 168px;}   
-.meta-desc-area .meta-right{width:45%;}   
-.meta-desc-area .meta-right .meta-title{ margin: 46px 0 30px 0;}   
-/* .meta-content{    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #4F4F4F;} */
-.rich-area{width:900px;margin: auto;display:flex;}
-.rich-area .rich-left{width:45%;}
-.rich-area .rich-right{width:45%;}
+.meta-desc-area .meta-left{width:50%;margin-top: 168px;}   
+.meta-desc-area .meta-right{width:50%;}   
+.meta-desc-area .meta-right .meta-title{     margin: 30px 0 30px 0;}   
+.meta-area-img{width:300px;padding:0;}
+.rich-area{width:900px;margin: auto;display:flex; padding:30px 0;}
+.rich-area .rich-left{width:50%;}
+.rich-area .rich-right{width:50%;padding: 0 0 0 100px;}
 .url-area{width:900px;margin: auto;display:flex;}
-.url-area .url-left{width:45%;}
-.url-area .url-right{width:45%;}
+.url-area .url-left{width:50%;    padding: 25px 0;}
+.url-area .url-right{width:50%;}
 .pixel-area{width:900px;margin: auto;display:flex;}
-.pixel-area .pixel-left{width:45%;}
-.pixel-area .pixel-right{width:45%;}
-.disclaimer-area{width:900px; margin: 0 auto;text-align: center;}
+.pixel-area .pixel-left{width:50%;     padding: 25px 0;}
+.pixel-area .pixel-right{width:50%;    padding: 0 0 0 100px;}
+.disclaimer-area{width:900px; margin: 0 auto;text-align: center;padding:100px 0;}
 .disclaimer-area .disclaimer-title{color:red;width: 100%;}
 .disclaimer-area .disclaimer-content{font-family: Poppins;
     font-size: 13px;
@@ -373,9 +386,29 @@ header{
         margin: auto;
         border: 1px solid #D9ECF6;
     } */
-    .sufer-seo-area{
-        margin: 20px auto;
-        width: 900px;
+    #sufer-seo-area{
+        display: flex;
+        padding: 5px;
+        position: relative;
+    }
+    .center-form1{
+        width: 892px;
+        margin: auto;
+        padding: 0 72px 0 162px;
+        background: #FFFFFF;
+        border: 1px solid #D9ECF6;
+        box-sizing: border-box;
+        box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+    }
+    .wrap-text{
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: #4F4F4F;
         border: 1px solid #D9ECF6;
     }
     .sufer-text{
