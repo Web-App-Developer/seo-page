@@ -1,11 +1,15 @@
-<svg width="398" height="134" viewBox="0 0 398 134" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="13" width="312.007" height="33" rx="5" fill="#FFF5D3"/>
-<rect x="13" y="51" width="385" height="10" rx="2" fill="#FFD993"/>
-<rect x="13" y="70" width="153.141" height="10" rx="2" fill="#FFD993"/>
-<rect x="0.5" y="93.5" width="208" height="40" fill="url(#paint0_linear)" stroke="#FFCB21"/>
-<rect x="13" y="108" width="176" height="10" rx="2" fill="#FFCB21"/>
+<svg width="424" height="150" viewBox="0 0 424 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="16" width="312.007" height="33" rx="5" fill="#FFF5D3"/>
+<rect x="0.5" y="44.5" width="423" height="105" fill="url(#paint0_linear)" stroke="#FFCB21"/>
+<path d="M28 110L30.6942 118.292H39.4127L32.3593 123.416L35.0534 131.708L28 126.584L20.9466 131.708L23.6407 123.416L16.5873 118.292H25.3058L28 110Z" fill="#F2994A"/>
+<path d="M59 110L61.6942 118.292H70.4127L63.3593 123.416L66.0534 131.708L59 126.584L51.9466 131.708L54.6407 123.416L47.5873 118.292H56.3058L59 110Z" fill="#F2994A"/>
+<path d="M90 110L92.6942 118.292H101.413L94.3593 123.416L97.0534 131.708L90 126.584L82.9466 131.708L85.6407 123.416L78.5873 118.292H87.3058L90 110Z" fill="#F2994A"/>
+<path d="M121 110L123.694 118.292H132.413L125.359 123.416L128.053 131.708L121 126.584L113.947 131.708L116.641 123.416L109.587 118.292H118.306L121 110Z" fill="#F2994A"/>
+<path d="M152 110L154.694 118.292H163.413L156.359 123.416L159.053 131.708L152 126.584L144.947 131.708L147.641 123.416L140.587 118.292H149.306L152 110Z" fill="#F2994A"/>
+<rect x="16" y="65" width="385" height="10" rx="2" fill="#27AE60"/>
+<rect x="16" y="84" width="153.141" height="10" rx="2" fill="#27AE60"/>
 <defs>
-<linearGradient id="paint0_linear" x1="104.5" y1="109.612" x2="104.5" y2="134" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="212" y1="86.949" x2="212" y2="150" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFFAEB"/>
 <stop offset="1" stop-color="white" stop-opacity="0"/>
 </linearGradient>
