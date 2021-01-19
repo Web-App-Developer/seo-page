@@ -46,16 +46,8 @@
         </div>
     </header>
     <div class="main">
-
-
-        <!-- <div class="advs-left ads-container">
-            <img class="ads-img" src="images/case-photo.svg" alt="google-ads" />
-            <p class="advs-txt ads-txt-center">Ads</p>
-        </div> -->
-
         <div class="advs-left">
             <img class="ads-img" src="images/case-photo.svg" alt="google-ads" />
-            <!-- <p class="advs-txt ads-txt-center">Ads</p> -->
         </div>
 
         <div class="center-form">
@@ -75,9 +67,8 @@
                 <label class="m-title mobile-only">0px/560px</label>
                 <div class="input-row-group">
                     <div class="mb-3 ht-title">
-                        <input id="title_text" type="text" class="form-control control-width serp_input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        <div class="counter_div"><span id="title_length">0px/560px</span></div>
-                        <!-- <p class="s-width">0px/560px</p> -->
+                        <input id="mofo_title" type="text" class="form-control control-width serp_input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        <div class="pixel_counting_div"><span id="mofo_title_length">0px/560px</span></div>
                     </div>
 
                 </div>
@@ -85,9 +76,8 @@
                 <label class="m-des mobile-only">0px/990px</label>
                 <div class="input-row-group">
                     <div class="mb-3 ht-desc">
-                        <textarea id="meta_desc" class="form-control control-width2 serp_input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></textarea>
-                        <div class="counter_div"><span id="meta_desc_length">0px/990px</span></div>
-                        <!-- <p class="s-width2">0px/990px</p> -->
+                        <textarea id="mofo_desc" class="form-control control-width2 serp_input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></textarea>
+                        <div class="pixel_counting_div"><span id="mofo_desc_length">0px/990px</span></div>
                     </div>
 
                 </div>
@@ -97,30 +87,25 @@
                 <div class="input-row-group">
                     <div class="mb-3 ht-url">
                         <input id="url" type="text" class="form-control control-width serp_input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        <div class="counter_div"><span id="url_length">0px/385px</span></div>
-                        <!-- <p class="s-width">0px/385px</p> -->
+                        <div class="pixel_counting_div"><span id="mofo_url_length">0px/385px</span></div>
                     </div>
 
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text1">
-                            <input id="show_rich" type="checkbox" class="show_box" aria-label="Checkbox for following text input">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                            Rich Snippet
-                        </label>
+                            <img class="rich_snippet_btn" src="images/radio_select_btn.svg" id="google_btn" alt="Google Button" /><input id="show_rich" type="checkbox" class="show_box label-m" aria-label="Checkbox for following text input"> Rich Snippet
+
                         </div>
                     </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text2">
-                            <input id="show_date" class="show_box" type="checkbox" aria-label="Checkbox for following text input">
-                            <input id="show_cached" class="show_box" type="checkbox" style="display: none;" checked />
-                            <input id="show_mobile" class="show_box" type="checkbox" style="display: none;" />
-                            <label class="form-check-label" for="flexRadioDefault1">
-                            Date
-                        </label>
+                            <img class="" src="images/radio_unselect_btn.svg" id="google_btn" alt="Google Button" /><input id="show_date" class="show_box label-m" type="checkbox" aria-label="Checkbox for following text input">
+                            <input id="show_cached" class="show_box " type="checkbox" style="display: none;" checked />
+                            <input id="show_mobile" class="show_box" type="checkbox" style="display: none;" /> Date
+
                         </div>
                     </div>
                 </div>
@@ -128,30 +113,33 @@
 
 
             <div class="sufer-seo-area1">
-
                 <p class="sufer-text">🚀🚀🚀 Want to Put Your Content to Next Level? <a href="#" class="yellow-text decor">Try Surfer SEO</a></p>
             </div>
             <div class="search-course-area1">
                 <p class="course-text">🔥 <a href="#" class="yellow-text decor">Free Online Course</a> 🔥 Keyword Research Course with Greg Gifford ➜</p>
             </div>
-            <div id="serp_preview">
+            <div id="mofo_serp_preview">
                 <div id="top_bar">
                     <img src="images/google_logo.svg" id="google_logo" alt="Google Logo">
-                    <div id="search_div">
-                        <div id="search_input" contenteditable="true"></div>
-                        <div id="search_categories">
-                            <div class="search_cat active">All</div>
-                            <div class="search_cat">Images</div>
-                            <div class="search_cat">Videos</div>
-                            <div class="search_cat">News</div>
-                            <div class="search_cat">Maps</div>
-                            <div class="search_cat">More</div>
-                            <div class="mode_cat" id="mode_mobile">
+                    <div id="mofo_search_div">
+                        <!-- <div id="mofo_search_input" contenteditable="true"></div> -->
+                        <div id="mofo_search_area">
+                            <input type="text" class="mofo_input_area" id="mofo_input_area" />
+                            <img src="images/search_aside.svg" id="google_close" alt="Google Close">
+                        </div>
+                        <div id="mofo_search_categories">
+                            <div class="mofo_search_cat all-cat active"> <img src="images/search.svg" id="google_search" alt="Google Search"> <span>All</span></div>
+                            <div class="mofo_search_cat"><img src="images/image.svg" id="google_image" alt="Google Image"> <span>Images</span></div>
+                            <div class="mofo_search_cat"><img src="images/video.svg" id="google_image" alt="Google Image"> <span>Videos</span></div>
+                            <div class="mofo_search_cat"><img src="images/News.svg" id="google_image" alt="Google Image"> <span>News</span></div>
+                            <div class="mofo_search_cat"><img src="images/Maps.svg" id="google_image" alt="Google Image"> <span>Maps</span></div>
+                            <div class="mofo_search_cat"><img src="images/More.svg" id="google_image" alt="Google Image"> <span>More</span></div>
+                            <div class="mode_cat mobile_cat" id="mode_mobile">
                                 <span class="material-icons" id="phone_iphone">
                         phone_iphone
                         </span>
                             </div>
-                            <div class="mode_cat mode_active" style="padding-left: 0px;" id="mode_desktop">
+                            <div class="mode_cat  mode_active" style="padding-left: 0px;" id="mode_desktop">
                                 <span class="material-icons" id="desktop_windows">
                             desktop_windows
                         </span>
@@ -159,21 +147,21 @@
                         </div>
                     </div>
                 </div>
-                <div id="serp_result">
-                    <span id="serp_url"></span>
+                <div id="mofo_serp_result">
+                    <span id="mofo_serp_url"></span>
                     <div class="arrow_container"><span class="down_arrow"></span></div><br>
-                    <span id="serp_title"></span><br>
-                    <div id="rich_div" style="display: none;"><span id="serp_rich"><img id="score_stars" src="img/stars.png" alt="Rating stars">Rating: 9,7/10 - 112 votes</span></div>
+                    <span id="mofo_serp_title"></span><br>
+                    <div id="mofo_rich_div" style="display: none;"><span id="serp_rich"><img id="score_stars" src="img/stars.png" alt="Rating stars">Rating: 9,7/10 - 112 votes</span></div>
                     <span id="serp_meta"></span>
                 </div>
-                <div id="serp_result_mobile" style="display: none; background-color: #fff;margin-bottom: 10px;font-size: 14px;line-height: 20px;box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);border-radius: 8px; width: 359px; margin: 0 auto; margin-top: 50px;">
+                <div id="mofo_serp_result_mobile" style="display: none; background-color: #fff;margin-bottom: 10px;font-size: 14px;line-height: 20px;box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);border-radius: 8px; width: 359px; margin: 0 auto; margin-top: 50px;">
                     <div id="serp_favdiv_mobile" style="font-size: 14px;line-height: 20px;color: #202124;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-top: 13px;display: block; padding-left: 16px; padding-right: 16px;">
                         <img id="serp_favicon_mobile" style="margin-right: 12px;vertical-align: middle;width: 16px;height: 16px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABs0lEQVR4AWL4//8/RRjO8Iucx+noO0MWUDo16FYABMGP6ZfUcRnWtm27jVPbtm3bttuH2t3eFPcY9pLz7NxiLjCyVd87pKnHyqXyxtCs8APd0rnyxiu4qSeA3QEDrAwBDrT1s1Rc/OrjLZwqVmOSu6+Lamcpp2KKMA9PH1BYXMe1mUP5qotvXTywsOEEYHXxrY+3cqk6TMkYpNr2FeoY3KIr0RPtn9wQ2unlA+GMkRw6+9TFw4YTwDUzx/JVvARj9KaedXRO8P5B1Du2S32smzqUrcKGEyA+uAgQjKX7zf0boWHGfn71jIKj2689gxp7OAGShNcBUmLMPVjZuiKcA2vuWHHDCQxMCz629kXAIU4ApY15QwggAFbfOP9DhgBJ+nWVJ1AZAfICAj1pAlY6hCADZnveQf7bQIwzVONGJonhLIlS9gr5mFg44Xd+4S3XHoGNPdJl1INIwKyEgHckEhgTe1bGiFY9GSFBYUwLh1IkiJUbY407E7syBSFxKTszEoiE/YdrgCEayDmtaJwCI9uu8TKMuZSVfSa4BpGgzvomBR/INhLGzrqDotp01ZR8pn/1L0JN9d9XNyx0AAAAAElFTkSuQmCC">
                         <span id="serp_favcrumbs_mobile" style="color: #3C4043;white-space: nowrap;font-size: 12px;font-family: Roboto,HelveticaNeue,Arial,sans-serif !important;font-weight: inherit;line-height: 20px;"></span>
                     </div>
-                    <div id="serp_title_mobile" style="width: 343px; word-wrap: break-word; font-size: 16px; line-height: 20px; padding-top: 12px; padding-left: 16px; padding-right: 16px; Roboto,HelveticaNeue,Arial,sans-serif !important; color: #1967D2;"></div>
+                    <div id="mofo_serp_title_mobile" style="width: 343px; word-wrap: break-word; font-size: 16px; line-height: 20px; padding-top: 12px; padding-left: 16px; padding-right: 16px; Roboto,HelveticaNeue,Arial,sans-serif !important; color: #1967D2;"></div>
                     <div id="serp_meta_mobile" style="width: 327px; word-wrap: break-word; font-size: 14px; line-height: 20px; padding-top: 12px; padding-left: 16px; padding-right: 16px; padding-bottom: 12px; Roboto,HelveticaNeue,Arial,sans-serif !important; color: #3C4043"></div>
-                    <div id="rich_div_mobile" style="margin-top: -4px; width: 327px; word-wrap: break-word; font-size: 14px; line-height: 20px; padding-left: 16px; padding-right: 16px; padding-bottom: 12px;">
+                    <div id="mofo_rich_div_mobile" style="margin-top: -4px; width: 327px; word-wrap: break-word; font-size: 14px; line-height: 20px; padding-left: 16px; padding-right: 16px; padding-bottom: 12px;">
                         <div id="rating_mobile" style="font-size: 14px; line-height: 20px; font-family: Roboto,HelveticaNeue,Arial,sans-serif; color: #202124;">Rating</div>
                         <div id="score_mobile" style="margin-top: 5px; font-size: 14px; line-height: 20px; font-family: Roboto,HelveticaNeue,Arial,sans-serif; color: #70757A;">9,2/10 <img id="score_stars_mobile" src="img/stars_mobile.png" alt="Rating stars" style="margin-top: -3px;"> (19)</div>
                     </div>
@@ -231,11 +219,6 @@
                     <img class="meta-area-img" src="images/2.svg">
 
                 </div>
-                <!-- <div class="meta-left">
-
-                    <img class="meta-area-img cloud_image" src="images/cloud.svg">
-                    <img class="meta-area-img box" src="images/box.svg">
-                </div> -->
                 <div class="meta-right">
                     <h1 class="meta-title">Snippet (Meta Description) </h1>
                     <div class="meta-snippet-textarea">
@@ -283,17 +266,13 @@
 
                 </div>
                 <div class="url-right">
-                    <!-- <header class="meta-snippet-header"> -->
                     <h1 class="url-title">URL </h1>
-                    <!-- </header> -->
                     <div class="url-snippet-textarea">
                         <p class="url-content1">
                             For sites with a clear information hierarchy, Google may show <span class="yellow-text">breadcrumb</span> links in the search results.
-
                         </p>
                         <p class="url-content2">
                             This snippet tool does not currently support any advanced URL features. These may be added in future releases.
-
                         </p>
                     </div>
                 </div>
@@ -318,15 +297,7 @@
 
                 </div>
             </div>
-
-            <!-- <div class="disclaimer-area">
-                <div class="disclaimer-title-area">
-                    <span class="disclaimer-title">Disclaimer</span>
-                </div>
-                <span class="disclaimer-content">This snippet tool and the content of this website are not affiliated with Google nor endorsed by them. The Google logo and any other trademarks owned by Google contained herein are used for educational/non-commercial purposes only. I have made every effort to replicate the appearance of Google's search results as accurately as possible, however the information on this website is provided "as is" without any representations or warranties, express or implied.</span>
-            </div> -->
         </div>
-
         <div class="advs-right">
             <img class="ads-img" src="images/case-photo.svg" alt="google-ads" />
         </div>
@@ -390,11 +361,11 @@
 
 
             $("#save_image").click(function() {
-                if ($("#serp_title").text() != "" && $("#serp_url").text() != "" && $("#serp_meta").text() != "") {
+                if ($("#mofo_serp_title").text() != "" && $("#mofo_serp_url").text() != "" && $("#serp_meta").text() != "") {
                     DownloadAsImage();
                     gtag('event', 'Image', {
                         'event_category': 'Button click',
-                        'event_label': $("#serp_url").text()
+                        'event_label': $("#mofo_serp_url").text()
                     });
                 } else {
                     var data = {
@@ -416,9 +387,9 @@
             }
 
             function DownloadAsImage() {
-                var element = $("#serp_result")[0];
+                var element = $("#mofo_serp_result")[0];
                 if ($("#show_mobile").prop('checked')) {
-                    element = $("#serp_result_mobile")[0];
+                    element = $("#mofo_serp_result_mobile")[0];
                 }
                 html2canvas(element).then(function(canvas) {
                     var myImage = canvas.toDataURL('image/png', 1.0);
@@ -432,32 +403,32 @@
                     $(".mode_active").removeClass('mode_active');
                     $("#mode_mobile").addClass('mode_active');
                     $("#show_mobile").prop('checked', true);
-                    $("#serp_result").hide();
-                    $("#serp_result_mobile").show();
+                    $("#mofo_serp_result").hide();
+                    $("#mofo_serp_result_mobile").show();
                     title_font = title_font_mb;
                     url_font = url_font_mb;
                     meta_font = meta_font_mb;
                     max_length_title = max_length_title_mb;
                     max_length_url = max_length_url_mb;
                     max_length_meta = max_length_meta_mb;
-                    $("#title_text").trigger('keyup');
+                    $("#mofo_title").trigger('keyup');
                     $("#url").trigger('keyup');
-                    $("#meta_desc").trigger('keyup');
+                    $("#mofo_desc").trigger('keyup');
                 } else if (mode === 'desktop') {
                     $(".mode_active").removeClass('mode_active');
                     $("#mode_desktop").addClass('mode_active');
                     $("#show_mobile").prop('checked', false);
-                    $("#serp_result_mobile").hide();
-                    $("#serp_result").show();
+                    $("#mofo_serp_result_mobile").hide();
+                    $("#mofo_serp_result").show();
                     title_font = title_font_dt;
                     url_font = url_font_dt;
                     meta_font = meta_font_dt;
                     max_length_title = max_length_title_dt;
                     max_length_url = max_length_url_dt;
                     max_length_meta = max_length_meta_dt;
-                    $("#title_text").trigger('keyup');
+                    $("#mofo_title").trigger('keyup');
                     $("#url").trigger('keyup');
-                    $("#meta_desc").trigger('keyup');
+                    $("#mofo_desc").trigger('keyup');
                 }
             }
 
@@ -602,9 +573,9 @@
 
             function clearInput() {
                 $("#ext_url").val('').trigger('keyup');
-                $("#title_text").val('').trigger('keyup');
+                $("#mofo_title").val('').trigger('keyup');
                 $("#url").val('').trigger('keyup');
-                $("#meta_desc").val('').trigger('keyup');
+                $("#mofo_desc").val('').trigger('keyup');
                 $("#snippet_id").val('');
                 $(".active_snippet").removeClass('active_snippet');
                 $("#serp_favicon_mobile").attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABs0lEQVR4AWL4//8/RRjO8Iucx+noO0MWUDo16FYABMGP6ZfUcRnWtm27jVPbtm3bttuH2t3eFPcY9pLz7NxiLjCyVd87pKnHyqXyxtCs8APd0rnyxiu4qSeA3QEDrAwBDrT1s1Rc/OrjLZwqVmOSu6+Lamcpp2KKMA9PH1BYXMe1mUP5qotvXTywsOEEYHXxrY+3cqk6TMkYpNr2FeoY3KIr0RPtn9wQ2unlA+GMkRw6+9TFw4YTwDUzx/JVvARj9KaedXRO8P5B1Du2S32smzqUrcKGEyA+uAgQjKX7zf0boWHGfn71jIKj2689gxp7OAGShNcBUmLMPVjZuiKcA2vuWHHDCQxMCz629kXAIU4ApY15QwggAFbfOP9DhgBJ+nWVJ1AZAfICAj1pAlY6hCADZnveQf7bQIwzVONGJonhLIlS9gr5mFg44Xd+4S3XHoGNPdJl1INIwKyEgHckEhgTe1bGiFY9GSFBYUwLh1IkiJUbY407E7syBSFxKTszEoiE/YdrgCEayDmtaJwCI9uu8TKMuZSVfSa4BpGgzvomBR/INhLGzrqDotp01ZR8pn/1L0JN9d9XNyx0AAAAAElFTkSuQmCC');
@@ -629,9 +600,9 @@
                 snippet.find('.saved_url:first').addClass('active_snippet');
                 snippet.find('.delete_snippet:first').addClass('active_snippet');
                 snippet.find('.snippet_number:first').addClass('active_snippet');
-                $("#title_text").val(snippet.attr('data-serp-title')).trigger('keyup');
+                $("#mofo_title").val(snippet.attr('data-serp-title')).trigger('keyup');
                 $("#url").val(snippet.attr('data-serp-url')).trigger('keyup');
-                $("#meta_desc").val(snippet.attr('data-serp-meta')).trigger('keyup');
+                $("#mofo_desc").val(snippet.attr('data-serp-meta')).trigger('keyup');
                 $("#snippet_id").val(snippet.attr('data-snippet-id'));
                 document.querySelector('#logo_div').scrollIntoView({
                     behavior: 'smooth'
@@ -664,14 +635,14 @@
 
             //SHARE BUTTON
             $("#share").click(function() {
-                if ($(".snippet_list").length == 0 && ($("#serp_title").text() == '' && $("#serp_url").text() == '' && $("#serp_meta").text() == '')) {
+                if ($(".snippet_list").length == 0 && ($("#mofo_serp_title").text() == '' && $("#mofo_serp_url").text() == '' && $("#serp_meta").text() == '')) {
                     var data = {
                         message: 'Nothing to share',
                         timeout: 2000
                     };
                     document.querySelector('#demo-toast-example').MaterialSnackbar.showSnackbar(data);
                 } else {
-                    if ($(".snippet_list").length == 0 && ($("#serp_title").text() != '' && $("#serp_url").text() != '' && $("#serp_meta").text() != '')) {
+                    if ($(".snippet_list").length == 0 && ($("#mofo_serp_title").text() != '' && $("#mofo_serp_url").text() != '' && $("#serp_meta").text() != '')) {
                         $("#save_snippet").trigger('click');
                     }
                     serpsim_url = window.location.href;
@@ -702,7 +673,7 @@
                 if ($(".snippet_list").filter(":visible").length > 0) {
                     $(".copy").trigger("click");
                 } else {
-                    clipboard_data = $("#title_text").val() + "\t" + $("#url").val() + "\t" + $("#meta_desc").val() + "\r\n";
+                    clipboard_data = $("#mofo_title").val() + "\t" + $("#url").val() + "\t" + $("#mofo_desc").val() + "\r\n";
                     $("#clipboard_data").val(clipboard_data);
 
                     var data = {
@@ -754,25 +725,25 @@
 
             //SAVE SNIPPET
             $("#save_snippet").click(function() {
-                if ($("#serp_title").text() != '' && $("#serp_url").text() != '' && $("#serp_meta").text() != '') {
-                    $("#serp_result").addClass('fadeOutDown');
+                if ($("#mofo_serp_title").text() != '' && $("#mofo_serp_url").text() != '' && $("#serp_meta").text() != '') {
+                    $("#mofo_serp_result").addClass('fadeOutDown');
                     setTimeout(function() {
-                        $("#serp_result").removeClass('fadeOutDown');
+                        $("#mofo_serp_result").removeClass('fadeOutDown');
                         if ($("#snippet_id").val() == '' || $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").length === 0) {
-                            $('<div class="snippet_list" data-snippet-id="' + Date.now() + Math.random() + '" data-serp-title="' + $("#title_text").val() + '" data-serp-url="' + $("#url").val() + '" data-serp-meta="' + $("#meta_desc").val() + '" data-list-number="' + (parseInt($(".snippet_list").length) + 1) + '"><div class="snippet_number">' + ($(".snippet_list").length + 1) + '.</div><div class="snippet_text"><span class="saved_title">' + truncateString($("#serp_title").text(), 65) + '</span><span class="saved_url">' + truncateString($("#serp_url").text(), 80) + '</span></div><div class="snippet_options"><i class="material-icons delete_snippet">clear</i></div>').insertAfter($("#snippet_list_header"));
+                            $('<div class="snippet_list" data-snippet-id="' + Date.now() + Math.random() + '" data-serp-title="' + $("#mofo_title").val() + '" data-serp-url="' + $("#url").val() + '" data-serp-meta="' + $("#mofo_desc").val() + '" data-list-number="' + (parseInt($(".snippet_list").length) + 1) + '"><div class="snippet_number">' + ($(".snippet_list").length + 1) + '.</div><div class="snippet_text"><span class="saved_title">' + truncateString($("#mofo_serp_title").text(), 65) + '</span><span class="saved_url">' + truncateString($("#mofo_serp_url").text(), 80) + '</span></div><div class="snippet_options"><i class="material-icons delete_snippet">clear</i></div>').insertAfter($("#snippet_list_header"));
                             if ($(".snippet_list").length % 2 === 0) {
                                 $(".snippet_list:first").addClass('evenDiv');
                             }
                         } else {
-                            if ($.fn.textWidth($("#title_text").val(), title_font) <= max_length_title && $.fn.textWidth($("#meta_desc").val(), meta_font) <= max_length_meta) {
+                            if ($.fn.textWidth($("#mofo_title").val(), title_font) <= max_length_title && $.fn.textWidth($("#mofo_desc").val(), meta_font) <= max_length_meta) {
                                 $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").removeClass('error').removeClass('had_error');
                             } else {
                                 $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").addClass('error');
                             }
 
-                            $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").attr("data-serp-title", $("#title_text").val()).attr("data-serp-url", $("#url").val()).attr("data-serp-meta", $("#meta_desc").val());
-                            $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").find(".saved_title:first").html(truncateString($("#serp_title").text(), 65));
-                            $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").find(".saved_url:first").html(truncateString($("#serp_url").text(), 80));
+                            $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").attr("data-serp-title", $("#mofo_title").val()).attr("data-serp-url", $("#url").val()).attr("data-serp-meta", $("#mofo_desc").val());
+                            $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").find(".saved_title:first").html(truncateString($("#mofo_serp_title").text(), 65));
+                            $(".snippet_list[data-snippet-id='" + $("#snippet_id").val() + "']").find(".saved_url:first").html(truncateString($("#mofo_serp_url").text(), 80));
                         }
 
                         extra_snippets = [];
@@ -784,9 +755,9 @@
                         if (slug) {
                             $.post("/process_serpsim", {
                                 action: 'update',
-                                title: $("#title_text").val(),
+                                title: $("#mofo_title").val(),
                                 url: $("#url").val(),
-                                meta: $("#meta_desc").val(),
+                                meta: $("#mofo_desc").val(),
                                 extra: extra_snippets,
                                 slug: slug
                             });
@@ -797,9 +768,9 @@
                         } else {
                             $.post("/process_serpsim", {
                                 action: 'save',
-                                title: $("#title_text").val(),
+                                title: $("#mofo_title").val(),
                                 url: $("#url").val(),
-                                meta: $("#meta_desc").val(),
+                                meta: $("#mofo_desc").val(),
                                 extra: extra_snippets
                             }).done(function(json) {
                                 history.replaceState({}, 'Serpsim', "/" + $.parseJSON(json).slug + "/");
@@ -828,21 +799,14 @@
                 }
 
             });
-
-            //RICH SNIPPET
-            // $("#show_rich").click(function() {
-            //     $("#rich_div_mobile").toggle();
-            //     $("#rich_div").toggle();
-            // });
-
             $("#show_rich").change(function() {
                 if ($(this).is(':checked')) {
-                    $("#rich_div_mobile").fadeIn();
-                    $("#rich_div").fadeIn();
+                    $("#mofo_rich_div_mobile").fadeIn();
+                    $("#mofo_rich_div").fadeIn();
 
                 } else {
-                    $("#rich_div_mobile").fadeOut();
-                    $("#rich_div").fadeOut();
+                    $("#mofo_rich_div_mobile").fadeOut();
+                    $("#mofo_rich_div").fadeOut();
                 }
             });
 
@@ -855,11 +819,11 @@
                     elm_id = 'serp_meta_mobile';
                 }
                 if ($("#show_date").prop('checked')) {
-                    $("#meta_desc").trigger('keyup');
+                    $("#mofo_desc").trigger('keyup');
                     $("#" + elm_id).prepend('<span id="rich_date">' + date_string + '</span>');
                 } else {
                     $("#" + elm_id).html($("#serp_meta").html().replace(date_string, ''));
-                    $("#meta_desc").trigger('keyup');
+                    $("#mofo_desc").trigger('keyup');
                 }
             });
 
@@ -867,10 +831,10 @@
             $("#show_cached").click(function() {
                 if ($(".arrow_container").css('display') == 'none') {
                     $(".arrow_container").css('display', 'inline');
-                    $("#serp_url_mobile").prepend('<img src="/img/amp_logo.png" alt="AMP logo" style="margin-right: 6px; margin-top: -1px;"/>');
+                    $("#mofo_serp_url_mobile").prepend('<img src="/img/amp_logo.png" alt="AMP logo" style="margin-right: 6px; margin-top: -1px;"/>');
                 } else {
-                    $("#serp_url_mobile").text($("#serp_url_mobile").text().replace('<img src="/img/amp_logo.png" alt="AMP logo" style="margin-right: 6px; margin-top: -1px;"/>', ''));
-                    //console.log($("#serp_url_mobile").text());
+                    $("#mofo_serp_url_mobile").text($("#mofo_serp_url_mobile").text().replace('<img src="/img/amp_logo.png" alt="AMP logo" style="margin-right: 6px; margin-top: -1px;"/>', ''));
+                    //console.log($("#mofo_serp_url_mobile").text());
                     $(".arrow_container").css('display', 'none');
                     $("#url").trigger('keyup');
                 }
@@ -904,9 +868,9 @@
                 });
                 $.post("/process_serpsim", {
                     action: 'update',
-                    title: $("#title_text").val(),
+                    title: $("#mofo_title").val(),
                     url: $("#url").val(),
-                    meta: $("#meta_desc").val(),
+                    meta: $("#mofo_desc").val(),
                     extra: extra_snippets,
                     slug: slug
                 }).done(function() {
@@ -1066,9 +1030,9 @@
                 if ($("#ext_url").val().includes("sitemap") && $("#ext_url").val().endsWith(".xml")) {
                     $(".snippet_list").remove();
                     $("#list_container").hide();
-                    $("#title_text").val('').trigger('keyup');
+                    $("#mofo_title").val('').trigger('keyup');
                     $("#url").val('').trigger('keyup');
-                    $("#meta_desc").val('').trigger('keyup');
+                    $("#mofo_desc").val('').trigger('keyup');
                     $("#snippet_id").val('');
                     $(".active_snippet").removeClass('active_snippet');
                     uncheckBoxes();
@@ -1187,8 +1151,8 @@
                         $("#serp_favicon_mobile").attr('src', 'https://www.google.com/s2/favicons?domain=' + extractDomain(json.url.replace(/\s+/g, " ")));
                         //$("#serp_favcrumbs_mobile").text(json.url.replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g,"$1 > $3").replace(/\.[^/.]+$/, ""));
                         $("#serp_favcrumbs_mobile").text(json.url.replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
-                        $("#title_text").val(json.title.replace(/\s+/g, " ")).trigger('keyup');
-                        $("#meta_desc").val(json.meta.replace(/\s+/g, " ")).trigger('keyup');
+                        $("#mofo_title").val(json.title.replace(/\s+/g, " ")).trigger('keyup');
+                        $("#mofo_desc").val(json.meta.replace(/\s+/g, " ")).trigger('keyup');
                         $("#url").val(json.url.replace(/\s+/g, " ")).trigger('keyup');
                         //$("#url").val(json.url.replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g,"$1 › $3").replace(/\/$/, "")).trigger('keyup');
                         $("#ext_url").val(json.url);
@@ -1215,20 +1179,20 @@
             });
 
             //TITLE
-            $("#serp_title").click(function() {
-                url = $("#serp_url").text();
+            $("#mofo_serp_title").click(function() {
+                url = $("#mofo_serp_url").text();
                 if (!/^https?:\/\//i.test(url)) {
                     url = 'http://' + url;
                 }
                 window.open(url);
             });
 
-            $("#title_text").keyup(function(e) {
+            $("#mofo_title").keyup(function(e) {
                 arrowNavigation($(this), e);
-                title_pixel_length = $.fn.textWidth($("#title_text").val(), title_font);
+                title_pixel_length = $.fn.textWidth($("#mofo_title").val(), title_font);
                 curr_length = "";
                 if (title_pixel_length > max_length_title) {
-                    title_chunks = $("#title_text").val().split(" ");
+                    title_chunks = $("#mofo_title").val().split(" ");
                     real_result = "";
                     real_length = 0;
                     prev_result = "";
@@ -1262,26 +1226,26 @@
                         real_length = $.fn.textWidth(real_result, title_font);
                     }
                     if ($("#show_mobile").prop('checked')) {
-                        $("#serp_title_mobile").text(real_result);
+                        $("#mofo_serp_title_mobile").text(real_result);
                     } else {
-                        $("#serp_title").text(real_result);
+                        $("#mofo_serp_title").text(real_result);
                     }
                     curr_length = "<strong><span class='alert'>" + Math.ceil(title_pixel_length) + "px</span></strong>";
                 } else if ($("#show_mobile").prop('checked')) {
-                    $("#serp_title_mobile").text($("#title_text").val());
+                    $("#mofo_serp_title_mobile").text($("#mofo_title").val());
                     curr_length = Math.ceil(title_pixel_length) + "px";
                 } else {
-                    $("#serp_title").text($("#title_text").val());
+                    $("#mofo_serp_title").text($("#mofo_title").val());
                     curr_length = Math.ceil(title_pixel_length) + "px";
                 }
-                $("#title_length").html('(' + curr_length + ' / ' + max_length_title + 'px)');
-                $("#title_length_mobile").html('(' + curr_length + ' / ' + max_length_title + 'px)');
+                $("#mofo_title_length").html('(' + curr_length + ' / ' + max_length_title + 'px)');
+                $("#mofo_title_length_mobile").html('(' + curr_length + ' / ' + max_length_title + 'px)');
             });
 
             //META DESCRIPTION
-            $("#meta_desc").keyup(function(e) {
+            $("#mofo_desc").keyup(function(e) {
                 arrowNavigation($(this), e);
-                meta_text = $("#meta_desc").val();
+                meta_text = $("#mofo_desc").val();
                 if ($("#show_date").prop('checked')) {
                     meta_text = '24 Dec, 2018 - ' + meta_text;
                 }
@@ -1316,14 +1280,14 @@
                     }
                     curr_length = "<strong><span class='alert'>" + Math.ceil(meta_pixel_length) + "px</span></strong>";
                 } else if ($("#show_mobile").prop('checked')) {
-                    $("#serp_meta_mobile").text($("#meta_desc").val());
+                    $("#serp_meta_mobile").text($("#mofo_desc").val());
                     curr_length = Math.ceil(meta_pixel_length) + 'px';
                 } else {
-                    $("#serp_meta").text($("#meta_desc").val());
+                    $("#serp_meta").text($("#mofo_desc").val());
                     curr_length = Math.ceil(meta_pixel_length) + 'px';
                 }
-                $("#meta_desc_length").html('(' + curr_length + ' / ' + max_length_meta + 'px)');
-                $("#meta_desc_length_mobile").html('(' + curr_length + ' / ' + max_length_meta + 'px)');
+                $("#mofo_desc_length").html('(' + curr_length + ' / ' + max_length_meta + 'px)');
+                $("#mofo_desc_length_mobile").html('(' + curr_length + ' / ' + max_length_meta + 'px)');
             });
 
 
@@ -1336,7 +1300,7 @@
                 if ($("#show_mobile").prop('checked')) {
                     $("#serp_favcrumbs_mobile").text($("#url").val().replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
                 } else {
-                    $("#serp_url").text($("#url").val().replace(/^https?:\/\//, '').replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
+                    $("#mofo_serp_url").text($("#url").val().replace(/^https?:\/\//, '').replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
                     if (url_val !== undefined) {
                         url_val = url_val.replace(/^https?:\/\//, '');
                     }
@@ -1349,21 +1313,21 @@
                 }
                 if (url_pixel_length > (max_length_url - offset)) {
                     if ($("#show_mobile").prop('checked')) {
-                        $("#serp_url_mobile").html(truncateUrlMobile(url_val));
+                        $("#mofo_serp_url_mobile").html(truncateUrlMobile(url_val));
                     } else {
                         $("#serp_favcrumbs_mobile").text($("#url").val().replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
-                        $("#serp_url").html(truncateUrlMobile(url_val));
+                        $("#mofo_serp_url").html(truncateUrlMobile(url_val));
                     }
                     curr_length = "<strong><span class='alert'>" + Math.floor(url_pixel_length + offset) + "px</span></strong>";
                 } else if ($("#show_mobile").prop('checked')) {
-                    $("#serp_url_mobile").html(url_val);
+                    $("#mofo_serp_url_mobile").html(url_val);
                     curr_length = Math.floor(url_pixel_length) + offset + "px";
                 } else {
-                    $("#serp_url").text($("#url").val().replace(/^https?:\/\//, '').replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
+                    $("#mofo_serp_url").text($("#url").val().replace(/^https?:\/\//, '').replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
                     curr_length = Math.floor(url_pixel_length) + offset + "px";
                 }
-                $("#url_length").html('(' + curr_length + ' / ' + max_length_url + 'px)');
-                $("#url_length_mobile").html('(' + curr_length + ' / ' + max_length_url + 'px)');
+                $("#mofo_url_length").html('(' + curr_length + ' / ' + max_length_url + 'px)');
+                $("#mofo_url_length_mobile").html('(' + curr_length + ' / ' + max_length_url + 'px)');
             });
 
             var loaded_slug = '<?php echo $_GET["slug"]; ?>';
