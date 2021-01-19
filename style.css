@@ -48,6 +48,11 @@ p {
     display: flex;
 }
 
+.google-logo-part {
+    width: 70px;
+    height: 50px;
+}
+
 #myLinks {
     width: 100%;
     display: block;
@@ -333,6 +338,7 @@ header {
 
 .alert {
     color: red;
+    padding: unset;
 }
 
 .control-width {
@@ -753,11 +759,23 @@ header {
     padding: 10px 0;
 }
 
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 1300px;
+    margin: auto;
+    color: #E0E0E0;
+}
+
 .footer-area {
     max-width: 1300px;
     width: 100%;
     margin: auto;
-    border-top: 1px solid black;
 }
 
 .footer-content-area {
@@ -775,6 +793,107 @@ header {
 
 .m-drop {
     display: none;
+}
+
+@media ( max-width: 1440px) {
+    .topnav {
+        display: flex;
+        max-width: 820px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form-wrapper {
+        max-width: 892px;
+        background: #FFFFFF;
+        border: 1px solid #D9ECF6;
+        box-sizing: border-box;
+        box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+        padding: 0 62px 0 80px;
+        margin: 0 auto;
+    }
+    .rich-textarea {
+        margin-right: 14px;
+    }
+    #mofo_search_area {
+        margin-top: 14px;
+        width: 653px;
+        background: #FFFFFF;
+        border: 1px solid #CACACA;
+        box-sizing: border-box;
+        border-radius: 100px;
+        margin-left: 19px;
+    }
+    #search_div {
+        margin-left: 160px;
+        max-width: 630px;
+        height: 122px;
+    }
+    #mofo_serp_result {
+        margin-left: 142px;
+        margin-top: 50px;
+        max-width: 600px;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    #mofo_search_div {
+        height: 122px;
+        max-width: 665px;
+        position: relative;
+        left: 128px;
+    }
+    #mofo_serp_result {
+        margin-left: 100px;
+        margin-top: 50px;
+        max-width: 600px;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+    #mofo_search_area {
+        margin-top: 14px;
+        width: 653px;
+        background: #FFFFFF;
+        border: 1px solid #CACACA;
+        box-sizing: border-box;
+        border-radius: 100px;
+        margin-left: 19px;
+    }
+    .mofo_input_area {
+        width: 514px;
+        height: 50px;
+        border: none;
+        border-radius: 100px;
+        padding-left: 25px;
+    }
+    .pixel-area .pixel-right {
+        width: 50%;
+        padding: 0px 0 0 80px;
+    }
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        width: 906px;
+        margin: auto;
+        color: #E0E0E0;
+    }
+}
+
+@media ( max-width: 1024px) {
+    .topnav {
+        display: flex;
+        padding: -2px 262px 0 369px;
+        max-width: 820px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form-wrapper {
+        padding: 0 16px 0 16px;
+    }
 }
 
 @media ( max-width: 768px) {
@@ -840,7 +959,7 @@ header {
     .ht-title,
     .ht-desc,
     .ht-url {
-        width: 80% !important;
+        width: 100%;
         display: inline-block;
     }
     .s-width2 {
@@ -902,34 +1021,13 @@ header {
         color: gray;
         font-family: arial, sans-serif;
     }
-}
-
-@media ( max-width: 1440px) {
-    .topnav {
-        display: flex;
-        max-width: 820px;
+    hr {
+        width: 600px;
         margin: 0 auto;
-        width: 100%;
-    }
-    #search_div {
-        margin-left: 160px;
-        max-width: 630px;
-        height: 122px;
     }
 }
 
-@media ( max-width: 1024px) {
-    .topnav {
-        display: flex;
-        padding: -2px 262px 0 369px;
-        max-width: 820px;
-        margin: 0 auto;
-        width: 100%;
-    }
-    .form-wrapper {
-        padding: 0 16px 0 16px;
-    }
-}
+@media ( max-width: 450px) {}
 
 
 /************End Comment Mode**************/
