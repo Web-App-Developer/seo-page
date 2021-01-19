@@ -10,11 +10,11 @@
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
     </style>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
     <script async src="//static.getclicky.com/js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script defer src="js/material.min.js"></script>
@@ -93,16 +93,16 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <div class="input-group-text1">
-                            <img class="rich_snippet_btn" src="images/radio_select_btn.svg" id="google_btn" alt="Google Button" /><input id="show_rich" type="checkbox" class="show_box label-m" aria-label="Checkbox for following text input"> Rich Snippet
-
+                        <div class="input-group-text1 ">
+                            <!-- <img class="rich_snippet_btn" src="images/radio_select_btn.svg" id="google_btn" alt="Google Button" /> -->
+                            <input id="show_rich" type="checkbox" class="show_box  input_class_checkbox" aria-label="Checkbox for following text input"> Rich Snippet
                         </div>
                     </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text2">
-                            <img class="" src="images/radio_unselect_btn.svg" id="google_btn" alt="Google Button" /><input id="show_date" class="show_box label-m" type="checkbox" aria-label="Checkbox for following text input">
+                            <input id="show_date" class="show_box  input_class_checkbox" type="checkbox" aria-label="Checkbox for following text input">
                             <input id="show_cached" class="show_box " type="checkbox" style="display: none;" checked />
                             <input id="show_mobile" class="show_box" type="checkbox" style="display: none;" /> Date
 
@@ -1238,8 +1238,10 @@
                     $("#mofo_serp_title").text($("#mofo_title").val());
                     curr_length = Math.ceil(title_pixel_length) + "px";
                 }
-                $("#mofo_title_length").html('(' + curr_length + ' / ' + max_length_title + 'px)');
-                $("#mofo_title_length_mobile").html('(' + curr_length + ' / ' + max_length_title + 'px)');
+                // $("#mofo_title_length").html('(' + curr_length + ' / ' + max_length_title + 'px)');
+                // $("#mofo_title_length_mobile").html('(' + curr_length + ' / ' + max_length_title + 'px)');
+                $("#mofo_title_length").html(curr_length + '/' + max_length_title + 'px');
+                $("#mofo_title_length_mobile").html('(dsfsd' + curr_length + '/' + max_length_title + 'px)');
             });
 
             //META DESCRIPTION
@@ -1286,8 +1288,8 @@
                     $("#serp_meta").text($("#mofo_desc").val());
                     curr_length = Math.ceil(meta_pixel_length) + 'px';
                 }
-                $("#mofo_desc_length").html('(' + curr_length + ' / ' + max_length_meta + 'px)');
-                $("#mofo_desc_length_mobile").html('(' + curr_length + ' / ' + max_length_meta + 'px)');
+                $("#mofo_desc_length").html(curr_length + '/' + max_length_meta + 'px');
+                $("#mofo_desc_length_mobile").html(curr_length + '/' + max_length_meta + 'px');
             });
 
 
@@ -1326,8 +1328,8 @@
                     $("#mofo_serp_url").text($("#url").val().replace(/^https?:\/\//, '').replace(/\s+/g, " ").replace(/([^\/])(\/)([^\/])/g, "$1 › $3").replace(/\/$/, ""));
                     curr_length = Math.floor(url_pixel_length) + offset + "px";
                 }
-                $("#mofo_url_length").html('(' + curr_length + ' / ' + max_length_url + 'px)');
-                $("#mofo_url_length_mobile").html('(' + curr_length + ' / ' + max_length_url + 'px)');
+                $("#mofo_url_length").html(curr_length + '/' + max_length_url + 'px');
+                $("#mofo_url_length_mobile").html(curr_length + '/' + max_length_url + 'px');
             });
 
             var loaded_slug = '<?php echo $_GET["slug"]; ?>';

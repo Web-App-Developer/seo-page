@@ -273,13 +273,14 @@ header {
 }
 
 #serp_meta {
-    font-family: Arial;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 1.58;
+    color: #545454;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    width: 600px;
+    word-wrap: break-word;
     display: inline-block;
 }
 
@@ -432,6 +433,13 @@ header {
 
 #mofo_search_categories {
     width: 100%;
+}
+
+#mofo_serp_preview {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
 }
 
 .mobile_cat {
@@ -847,8 +855,8 @@ header {
     }
     #mofo_serp_preview {
         padding: 0 10px;
-        width: 100% !important;
-        background: #FFFFFF;
+        width: 100%;
+        background: lightblue;
         border: 1px solid #C5DFED !important;
         box-sizing: border-box;
         box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
