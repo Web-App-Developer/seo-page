@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery-3.5.1.min.js"></script>
+<style>
+       input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("images/radio_select_btn.svg") no-repeat;
+    height: 125px;
+    width: 125px;;
+    background-size: 50%;
+}
+
+input[type=checkbox]:checked + label {
+    background:url("images/radio_unselect_btn.svg") no-repeat;
+    height: 125px;
+    width: 125px;
+    display:inline-block;
+    background-size: 50%;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image</h2>
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+<input type="checkbox" name="fordCheckBox" id="Ford" value="Ford">
+<label for="Ford"></label>
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+</body>
+<script>
+     $(document).ready(function() {
+         // $('.class_checkbox1').on('click', function() {
+//     alert('1')
+//     if ($(this).is(':checked')) {
+//         $(this).css('background-image', 'url(../images/radio_select_btn.svg)');
+//     } else {
+//         $(this).css('background-image', 'url(../images/radio_unselect_btn.svg)');
+//     }
+// });
+               $("#Ford").change(function() {
+                if ($(this).is(':checked')) {
+                    alert('checked');
+                    // $("#mofo_rich_div_mobile").fadeIn();
+                    // $("#mofo_rich_div").fadeIn();
+
+                } else {
+                    alert('unchecked');
+                    // $("#mofo_rich_div_mobile").fadeOut();
+                    // $("#mofo_rich_div").fadeOut();
+                }
+            });
+        });
+</script>
+</html>

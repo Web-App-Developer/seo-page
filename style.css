@@ -184,7 +184,38 @@ header {
 .yellow-text {
     color: #FFA600;
 }
-
+/* input[type=checkbox]{display:none;} */
+#show_rich,#show_date{display:none;}
+/* input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("images/radio_select_btn.svg") no-repeat;
+    height: 125px;
+    width: 125px;;
+    background-size: 50%;
+} */
+#show_rich + label,#show_date + label {
+    display: inline-block;
+    padding: 0 0 0 0px;
+    background: url(images/radio_unselect_btn.svg) no-repeat;
+    height: 21px;
+    width: 21px;
+    background-size: 100%;
+}
+/* input[type=checkbox]:checked + label {
+    background:url("images/radio_unselect_btn.svg") no-repeat;
+    height: 125px;
+    width: 125px;
+    display:inline-block;
+    background-size: 50%;
+} */
+#show_rich:checked + label, #show_date:checked + label{
+    background:url("images/radio_select_btn.svg") no-repeat;
+    height: 21px;
+    width: 21px;
+    display:inline-block;
+    background-size: 100%;
+}.cb-label-txt{margin-left:10px;display: inline-block;}
 .sufer-seo-area1 {
     margin: 20px 0;
     background: #FFFFFF;

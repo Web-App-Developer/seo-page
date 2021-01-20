@@ -95,14 +95,17 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text1 ">
                             <!-- <img class="rich_snippet_btn" src="images/radio_select_btn.svg" id="google_btn" alt="Google Button" /> -->
-                            <input id="show_rich" type="checkbox" class="show_box  input_class_checkbox" aria-label="Checkbox for following text input"> Rich Snippet
+                            <input id="show_rich" type="checkbox" class="show_box  input_class_checkbox" aria-label="Checkbox for following text input"><label for=" Rich Snippet"></label>
+                            <span class="cb-label-txt">Rich Snippet</span>
                         </div>
                     </div>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <div class="input-group-text2">
-                            <input id="show_date" class="show_box  input_class_checkbox" type="checkbox" aria-label="Checkbox for following text input">
+                            <!-- <input id="show_date" class="show_box  input_class_checkbox" type="checkbox" aria-label="Checkbox for following text input"> -->
+                            <input id="show_date" type="checkbox" class="show_box  input_class_checkbox" aria-label="Checkbox for following text input"><label for=" Rich Snippet"></label>
+                            <span class="cb-label-txt">Date</span>
                             <input id="show_cached" class="show_box " type="checkbox" style="display: none;" checked />
                             <input id="show_mobile" class="show_box" type="checkbox" style="display: none;" /> Date
 
@@ -801,6 +804,7 @@
 
             });
             $("#show_rich").change(function() {
+                alert();
                 if ($(this).is(':checked')) {
                     $("#mofo_rich_div_mobile").fadeIn();
                     $("#mofo_rich_div").fadeIn();
