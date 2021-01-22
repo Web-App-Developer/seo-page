@@ -846,15 +846,6 @@ hr {
     .rich-textarea {
         margin-right: 14px;
     }
-    #mofo_search_area {
-        margin-top: 14px;
-        width: 653px;
-        background: #FFFFFF;
-        border: 1px solid #CACACA;
-        box-sizing: border-box;
-        border-radius: 100px;
-        margin-left: 19px;
-    }
     #search_div {
         margin-left: 160px;
         max-width: 630px;
@@ -890,7 +881,7 @@ hr {
         margin-left: 19px;
     }
     .mofo_input_area {
-        width: 514px;
+        width:80%;
         height: 50px;
         border: none;
         border-radius: 100px;
@@ -925,8 +916,38 @@ hr {
     .form-wrapper {
         padding: 0 16px 0 16px;
     }
+    #mofo_search_area {
+        margin-top: 22px;
+        width: 440px;
+        background: #FFFFFF;
+        border: 1px solid #CACACA;
+        box-sizing: border-box;
+        border-radius: 100px;
+        margin-left: 19px;
+    }.mofo_input_area {
+        width: 69%;
+        height: 50px;
+        border: none;
+        border-radius: 100px;
+        padding-left: 25px;
+    }.mofo_search_cat {
+        color: #777;
+        font-weight: 400;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        bottom: -7px;
+        text-align: center;
+        height: 48px;
+        margin-bottom: -10px;
+        padding-left: 11px;
+        /* padding-right: 20px; */
+        vertical-align: middle;
+        line-height: 48px;
+        cursor: pointer;
+        float: left;
+        position: relative;
+    }
 }
-
 @media ( max-width: 768px) {
     .topnav {
         padding: 4px 0 0 19px !important;
@@ -1058,7 +1079,58 @@ hr {
     }
 }
 
-@media ( max-width: 450px) {}
+@media ( max-width: 450px) {
+    .google-logo-part {
+        width: 60px;
+        height: 60px;
+        margin-top: -6px;
+    }
+    .ht-title>input, .ht-desc>textarea, .ht-url>input {
+        width: 100%;
+        background: #FAFAFA;
+        box-shadow: unset !important;
+    }.pixel_counting_div span{
+        display: none;
+    }.m-intro {
+        margin-left: 10px;
+        margin-top: 14px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }.input-row-group {
+        padding: 0 ;
+        position: relative;
+        width: 100%;
+    }.center-form {
+        padding: 0px 8px;
+        width: 100%;
+    }.form-wrapper {
+        padding: 0 16px 0 16px;
+    }#google_logo{
+        width: 90px;
+        display: block;
+        margin: 0;
+        position: relative;
+        top:0;
+    }#mofo_search_area{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: 45px;
+        border: 1px solid #CACACA;
+    }#mofo_search_div { position: relative;   width: 100%; left:0;}
+    .mofo_input_area {
+        width: 56%;
+        height: 43px;
+        border: none;
+        border-radius: 85px;
+        /* padding-left: 25px; */
+    }
+}
 
 
 /************End Comment Mode**************/
