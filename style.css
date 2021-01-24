@@ -184,8 +184,16 @@ header {
 .yellow-text {
     color: #FFA600;
 }
+
+
 /* input[type=checkbox]{display:none;} */
-#show_rich,#show_date{display:none;}
+
+#show_rich,
+#show_date {
+    display: none;
+}
+
+
 /* input[type=checkbox] + label {
     display:inline-block;
     padding: 0 0 0 0px;
@@ -194,7 +202,9 @@ header {
     width: 125px;;
     background-size: 50%;
 } */
-#show_rich + label,#show_date + label {
+
+#show_rich+label,
+#show_date+label {
     display: inline-block;
     padding: 0 0 0 0px;
     background: url(images/radio_unselect_btn.svg) no-repeat;
@@ -202,6 +212,8 @@ header {
     width: 21px;
     background-size: 100%;
 }
+
+
 /* input[type=checkbox]:checked + label {
     background:url("images/radio_unselect_btn.svg") no-repeat;
     height: 125px;
@@ -209,13 +221,21 @@ header {
     display:inline-block;
     background-size: 50%;
 } */
-#show_rich:checked + label, #show_date:checked + label{
-    background:url("images/radio_select_btn.svg") no-repeat;
+
+#show_rich:checked+label,
+#show_date:checked+label {
+    background: url("images/radio_select_btn.svg") no-repeat;
     height: 21px;
     width: 21px;
-    display:inline-block;
+    display: inline-block;
     background-size: 100%;
-}.cb-label-txt{margin-left:10px;display: inline-block;}
+}
+
+.cb-label-txt {
+    margin-left: 10px;
+    display: inline-block;
+}
+
 .sufer-seo-area1 {
     margin: 20px 0;
     background: #FFFFFF;
@@ -881,7 +901,7 @@ hr {
         margin-left: 19px;
     }
     .mofo_input_area {
-        width:80%;
+        width: 80%;
         height: 50px;
         border: none;
         border-radius: 100px;
@@ -924,13 +944,15 @@ hr {
         box-sizing: border-box;
         border-radius: 100px;
         margin-left: 19px;
-    }.mofo_input_area {
+    }
+    .mofo_input_area {
         width: 69%;
         height: 50px;
         border: none;
         border-radius: 100px;
         padding-left: 25px;
-    }.mofo_search_cat {
+    }
+    .mofo_search_cat {
         color: #777;
         font-weight: 400;
         font-family: arial, sans-serif;
@@ -948,6 +970,7 @@ hr {
         position: relative;
     }
 }
+
 @media ( max-width: 768px) {
     .topnav {
         padding: 4px 0 0 19px !important;
@@ -1085,13 +1108,17 @@ hr {
         height: 60px;
         margin-top: -6px;
     }
-    .ht-title>input, .ht-desc>textarea, .ht-url>input {
+    .ht-title>input,
+    .ht-desc>textarea,
+    .ht-url>input {
         width: 100%;
         background: #FAFAFA;
         box-shadow: unset !important;
-    }.pixel_counting_div span{
+    }
+    .pixel_counting_div span {
         display: none;
-    }.m-intro {
+    }
+    .m-intro {
         margin-left: 10px;
         margin-top: 14px;
         font-family: Poppins;
@@ -1101,34 +1128,120 @@ hr {
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-    }.input-row-group {
-        padding: 0 ;
+    }
+    .input-row-group {
+        padding: 0;
         position: relative;
         width: 100%;
-    }.center-form {
+    }
+    .center-form {
         padding: 0px 8px;
         width: 100%;
-    }.form-wrapper {
+    }
+    .form-wrapper {
         padding: 0 16px 0 16px;
-    }#google_logo{
+    }
+    #google_logo {
         width: 90px;
         display: block;
         margin: 0;
         position: relative;
-        top:0;
-    }#mofo_search_area{
+        top: 0;
+    }
+    #mofo_search_area {
         display: block;
         width: 90%;
         margin: 0 auto;
         height: 45px;
         border: 1px solid #CACACA;
-    }#mofo_search_div { position: relative;   width: 100%; left:0;}
+    }
+    #mofo_search_div {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
     .mofo_input_area {
         width: 56%;
         height: 43px;
         border: none;
         border-radius: 85px;
         /* padding-left: 25px; */
+    }
+    .vertical-ads {
+        display: block;
+    }
+    #mofo_search_categories {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    #mofo_serp_result {
+        margin: 72px 10px;
+        background: #FFFFFF;
+    }
+    .vertical-ads .ads-img {
+        margin-left: calc(0px);
+    }
+    .mobile-svg {
+        width: 100%;
+        display: block;
+    }
+    .snippet-area .snippet-left {
+        width: 100%;
+    }
+    .snippet-right {
+        display: none;
+    }
+    .character {
+        width: 100%;
+        display: block;
+    }
+    .character .character-left {
+        width: 100%;
+    }
+    .character .character-right {
+        width: 100%;
+        margin: 0;
+    }
+    .meta-desc-area {
+        display: block;
+    }
+    .meta-desc-area .meta-right {
+        width: 100%;
+    }
+    .rich-area .rich-left {
+        width: 100%;
+    }
+    .rich-area .rich-right {
+        display: none;
+    }
+    .url-area {
+        display: block;
+    }
+    .url-area .url-right {
+        width: 100%;
+    }
+    .pixel-area .pixel-right {
+        display: none;
+    }
+    .pixel-area .pixel-left {
+        width: 100%;
+        padding: 25px 0;
+    }
+    hr {
+        height: 1px;
+        width: 80%;
+    }
+    .disclaimer-area {
+        padding: 0;
+    }
+    .footer-content-area {
+        padding: 0px;
+        display: grid;
+    }
+    .footer-content {
+        padding: 0;
     }
 }
 
