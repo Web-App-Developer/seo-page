@@ -1004,8 +1004,7 @@ hr {
     #mofo_serp_preview {
         padding: 0 10px;
         width: 100%;
-        background: lightblue;
-        border: 1px solid #C5DFED !important;
+        border: 1px solid #C5DFED ;
         box-sizing: border-box;
         box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
@@ -1103,11 +1102,12 @@ hr {
         top: 0;
     }
     #mofo_search_area {
-        display: block;
-        width: 90%;
+        display: flex;
+        width: 95%;
         margin: 0 auto;
-        height: 45px;
+        height: 40px;
         border: 1px solid #CACACA;
+        margin-bottom: 10px;
     }
     #mofo_search_div {
         position: relative;
@@ -1115,8 +1115,8 @@ hr {
         left: 0;
     }
     .mofo_input_area {
-        width: 56%;
-        height: 43px;
+        width: 50%;
+        height: 34px;
         border: none;
         border-radius: 85px;
         /* padding-left: 25px; */
@@ -1126,7 +1126,7 @@ hr {
     }
     #mofo_search_categories {
         width: 100%;
-        height: 100px;
+        height: 73px;
         display: flex;
         overflow-x: scroll;
     }
@@ -1135,7 +1135,8 @@ hr {
         background: #FFFFFF;
     }
     .vertical-ads .ads-img {
-        margin-left: calc(0px);
+        display: table;
+        margin: 20px auto;
     }
     .mobile-svg {
         width: 100%;
@@ -1191,12 +1192,27 @@ hr {
         padding: 0;
     }
     .footer-content-area {
-        padding: 0px;
+        padding: 0 10px;
         display: grid;
     }
     .footer-content {
         padding: 0;
     }
+    .mobile-svg img{
+        width: 100%;margin: 20px auto;
+    }.url-area-img{width: 100%;}
+    #mofo_serp_result_mobile{width: 100% !important; }
+    .url-left{display: none;}
+    .meta-area-img {width: 100%; margin: 20px auto;
+    }
+    #top_bar {
+        position: relative;
+        background-color: #fafafa;
+        height: 160px;
+        border-bottom: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+    }.mofo_search_cat {line-height: 24px;}
+    .character-part-text-right{margin-left:20px;left:0 !important;}
 }
 
 
