@@ -21,25 +21,39 @@ for (var i = 0; i < children.length; i++) {
         this.className += " active";
     });
 }
-// $('.input_class_checkbox1').each(function() {
-//     $(this).hide().after('<div class="class_checkbox1" id="class_checkbox1" ></div>');
-
-// });
-// $('.class_checkbox1').on('click', function() {
-//     alert('1')
-//     if ($(this).is(':checked')) {
-//         $(this).css('background-image', 'url(../images/radio_select_btn.svg)');
-//     } else {
-//         $(this).css('background-image', 'url(../images/radio_unselect_btn.svg)');
-//     }
-// });
-// $('.input_class_checkbox2').each(function() {
-//     $(this).hide().after('<div class="class_checkbox2" ></div>');
-
-// });
-
-// $('.class_checkbox2').on('click', function() {
-//     alert('2');
-//     $(this).toggleClass('checked').prev().prop('checked', $(this).is('.checked'));
-//     $(this).css('background-image', 'url(../images/radio_select_btn.svg)');
-// });
+function myfunction1(){
+    var checkbox = $("#show_rich");
+    var ch_val = checkbox.val();
+    if(ch_val == "0"){
+        $("#show_rich").val("1");
+        $(".rich_snippet_btn1")[0].src = "../images/radio_select_btn.svg"
+        $("#mofo_rich_div_mobile").fadeIn();
+        $("#mofo_rich_div").fadeIn();
+    }else{
+       $("#show_rich").val("0");
+       $(".rich_snippet_btn1")[0].src = "../images/radio_unselect_btn.svg"
+       $("#mofo_rich_div_mobile").fadeOut();
+       $("#mofo_rich_div").fadeOut();
+    }
+}
+function myfunction2(){
+    var checkbox = $("#show_date");
+    var ch_val = checkbox.val();
+    if(ch_val == "0"){
+        $("#show_date").val("1");
+        $(".date_btn1")[0].src = "../images/radio_select_btn.svg"
+        var date_string = '24 Dec, 2019 - ';
+        var elm_id = 'serp_meta';
+        if ($("#show_mobile").prop('checked')) {
+            date_string = '24 Dec 2019 · ';
+            elm_id = 'serp_meta_mobile';
+        }
+        $("#mofo_desc").trigger('keyup');
+        $("#" + elm_id).prepend('<span id="rich_date">' + date_string + '</span>');
+    }else{
+       $("#show_date").val("0");
+       $(".date_btn1")[0].src = "../images/radio_unselect_btn.svg"
+       $("#" + elm_id).html($("#serp_meta").html().replace(date_string, ''));
+       $("#mofo_desc").trigger('keyup');
+    }
+}
